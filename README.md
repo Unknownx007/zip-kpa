@@ -1,30 +1,6 @@
 <div align="center">
 
-```
-XXXXXXXXXXXXXX
-XXXXXXXXXXXXXdo.
-XXX          Y88.
-XXX           `Y8pXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXX            'Y8b.                           XX
-XXX              Y8b.                          XX
-XXX               `88opXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXX                `YXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXX                       X                        XXX
-XXX                     XXXXX                      XXX
-XXX                       X                        XXX
-XXX                     XXXXX                      XXX
-XXX     ********          X         +=======+      XXX
-XXX     *DEDSEC*         XXX        |ZIP-KPA|      XXX
- XX     ********        dd bb       +=======+      XXX
-XX                      d| |b                      XXX
-XXX                     qq pp                      XXX
-XXX                     'q|p`                      XXX
-XXX                      '"`                       XXX
-XXX                                                XXX
-XXXX                                               XXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
+<img width="918" height="449" alt="0" src="https://github.com/user-attachments/assets/ab86093e-da90-4c6b-8ba7-1aaa1cd7f4be" />
 
 # ZIP-KPA — The Archive Whisperer
 
@@ -32,7 +8,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg)]()
+[![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)]()
 [![Author](https://img.shields.io/badge/author-DEDSEC-brightgreen.svg)](https://github.com/Unknownx007)
 
 *Brute-Force · Known-Plaintext · ZipCrypto & AES*
@@ -70,78 +46,21 @@ Mode 2 is a **Biham–Kocher attack** wrapped around [`bkcrack`](https://github.
 
 ---
 
-## 📸 Screenshots
-
-```
-$ python3 run.py
-```
-
-<div align="center">
-
-```
-XXXX...       ╔═══════════════════════════════════════════════╗
-  (banner)    ║   The Archive Whisperer  ·  v1.0              ║
-              ║   Brute-Force  ·  Known-Plaintext             ║
-              ╚═══════════════════════════════════════════════╝
-
-  [1]  💀  Brute Force         wordlist → ZIP
-  [2]  🧠  Known-Plaintext      ZipCrypto only
-  [3]  ℹ   About / Credits      author info
-  [0]  🚪  Exit
-```
-
-</div>
-
-*(The actual banner is in full color with a stylized ZIP file — ASCII art above is a plain preview.)*
-
----
-
 ## 📦 Installation
 
-### 🐧 Linux / 🍎 macOS
+### 🐧 Linux 
 
 ```bash
 git clone https://github.com/Unknownx007/zip-kpa.git
 cd zip-kpa
-chmod +x install.sh
-bash install.sh
+python3 run.py
 ```
 
-The installer will:
-1. Install Python dependencies (`rich`, `pyzipper`)
-2. Auto-detect your OS + architecture
-3. Download the correct `bkcrack` binary for your platform
-4. Verify the SHA256 checksum
-5. Place `bkcrack` in the project root
-
-### 🪟 Windows
-
-```bat
-git clone https://github.com/Unknownx007/zip-kpa.git
-cd zip-kpa
-install.bat
-```
-
-### 🛠 Manual install
-
-```bash
-pip install -r requirements.txt
-
-# Then download bkcrack manually for your platform:
-#   https://github.com/kimci86/bkcrack/releases
-#
-# Extract and place `bkcrack` (or `bkcrack.exe`) in the project root,
-# or anywhere in your PATH.
-```
-
----
 
 ## 🚀 Usage
 
 ```bash
 python3 run.py
-# or
-python3 -m zipkpa
 ```
 
 ### Mode 1 — Brute Force
